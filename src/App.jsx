@@ -1,25 +1,46 @@
 
-//import './App.css'
-import styles from "./App.module.css"
 
 function App() {
  
 
   return (
     <div >
-     <h1 className={styles.title}>Titulo</h1>
-     <p>Paragrafo</p>
-      <button 
-        className={styles.btn}
-      >
-        Botao
-      </button>
+      <h1>Styled Components</h1>
         
     </div>
   )
 }
 
 export default App
+
+
+// //import './App.css'
+// import styles from "./App.module.css"
+// import { FaReact } from 'react-icons/fa'
+
+// function App() {
+ 
+
+//   return (
+//     <div >
+//      <h1 className={styles.title}>Titulo</h1>
+//      <p>Paragrafo</p>
+//       <button 
+//         className={styles.btn}
+//       >
+//         <FaReact
+//           className={
+//             styles.reactIcon
+//           }
+
+//         /> Botao
+//       </button>
+        
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 // function App() {
