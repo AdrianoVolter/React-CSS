@@ -8,7 +8,9 @@ function App() {
       <h1>Styled Components</h1>
       <Titulo>Titulo</Titulo>
       <p>Paragrafo</p>
-      <Botao>Botao</Botao>
+      <Botao>Botao
+        
+      </Botao>
         <div className="container">
           <p className="texto">Texto sass</p>
           <button className="btn">botao</button>

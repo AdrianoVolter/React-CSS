@@ -30,5 +30,8 @@ export const Botao = styled.button`
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.2s;
+    &:hover {
+        background: #888;
+    }
 
 `;
