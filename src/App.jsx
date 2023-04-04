@@ -1,4 +1,4 @@
-
+import { Titulo, Botao } from "./styles"
 
 function App() {
  
@@ -6,6 +6,9 @@ function App() {
   return (
     <div >
       <h1>Styled Components</h1>
+      <Titulo>Titulo</Titulo>
+      <p>Paragrafo</p>
+      <Botao>Botao</Botao>
         
     </div>
   )
