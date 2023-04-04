@@ -36,7 +36,7 @@ export const Botao = styled.button`
 
 `;
 
-export const Header = styled.div`
+export const Header = styled.div` // estilizando um elemento pai
     background: #f00;
     height: 60px;
     display: flex;
@@ -45,7 +45,7 @@ export const Header = styled.div`
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    h1 {
+    h1 { // estilizando um elemento filho
         margin: 0;
         color: #888;
     }
