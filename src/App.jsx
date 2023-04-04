@@ -9,7 +9,10 @@ function App() {
       <Titulo>Titulo</Titulo>
       <p>Paragrafo</p>
       <Botao>Botao</Botao>
-        
+        <div className="container">
+          <p className="texto">Texto sass</p>
+          <button className="btn">botao</button>
+        </div>
     </div>
   )
 }
