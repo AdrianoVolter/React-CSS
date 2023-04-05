@@ -1,20 +1,25 @@
-import { Button } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 //criar um imput e um botao estilizado com styled components
 function App() {
  
 
   return (
-    <div >
+    <Container className="shadow-lg">
       <h1>
-        Ola
+        React Bootstrap
       </h1>
+      {/* 
+        m - margin -> [e: end, s: start, t: top, b: bottom, a: all] + tamanho (1 a 5)
+        p - padding -> [e: end, s: start, t: top, b: bottom, a: all] + tamanho (1 a 5)
+      */}
       
-      <Button 
-        variant="primary"
-      >
-        Botao
-      </Button>
-    </div>
+      <Button className="p-1" variant="primary">Botao</Button>{' '}
+      <Button className="p-1" variant="secondary">Botao 2</Button>{' '}
+      <Button variant="success">Botao 3</Button>{' '}
+      <Button variant="warning">Botao 4</Button>{' '}
+      <Button variant="danger">Botao 5</Button>{' '}
+      <Button variant="info">Botao 6</Button>{' '} <br /><br />
+    </Container>
   )
 }
 
