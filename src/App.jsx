@@ -1,4 +1,4 @@
-
+import { Button } from "react-bootstrap"
 //criar um imput e um botao estilizado com styled components
 function App() {
  
@@ -8,6 +8,12 @@ function App() {
       <h1>
         Ola
       </h1>
+      
+      <Button 
+        variant="primary"
+      >
+        Botao
+      </Button>
     </div>
   )
 }
