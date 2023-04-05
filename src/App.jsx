@@ -1,26 +1,37 @@
-import { Titulo, Botao , Header} from "./styles"
 
+//criar um imput e um botao estilizado com styled components
 function App() {
  
 
   return (
     <div >
-      <Header>
-        <h1>Styled Components</h1>
-        
-      </Header>
-      <h1>Styled Components</h1>
-      <Titulo>Titulo</Titulo>
-      <p>Paragrafo</p>
-      <Botao>Botao
-
-      </Botao>
-        
+      <h1>
+        Ola
+      </h1>
     </div>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // //import './App.css'
