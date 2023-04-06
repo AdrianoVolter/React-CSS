@@ -1,15 +1,66 @@
-import {Col, Form} from 'react-bootstrap'
-import {Button} from 'react-bootstrap'
+// import {Col, Form} from 'react-bootstrap'
+// import {Button} from 'react-bootstrap'
 import {Container} from 'react-bootstrap'
-import {Row} from 'react-bootstrap'
+// import {Row} from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
+
 //import "./holder"
 //criar um imput e um botao estilizado com styled components
+
+
+
 function App() {
  
 
   return (
     <Container>
-      <Form>
+      <Nav className="bg-fluid bg-danger justify-content-end" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/home">Active</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Link</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-2">Link</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="disabled" disabled>
+            Disabled
+          </Nav.Link>
+        </Nav.Item>
+      </Nav> <br />
+
+      <Dropdown>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+          Dropdown Button
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
+    </Container>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+{/* <Form>
         <Row>
           <h1 className='title'>Form com bootstrap</h1>
           <Col className='col-12 col-lg-4 col-md-6'>
@@ -38,12 +89,13 @@ function App() {
         
         </Col>
         </Row>
-      </Form>
-    </Container>
-  )
-}
+      </Form> */}
 
-export default App
+
+
+
+
+
 
 
 // <Form>
