@@ -1,6 +1,7 @@
-import {Form} from 'react-bootstrap'
+import {Col, Form} from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 import {Container} from 'react-bootstrap'
+import {Row} from 'react-bootstrap'
 //import "./holder"
 //criar um imput e um botao estilizado com styled components
 function App() {
@@ -9,6 +10,9 @@ function App() {
   return (
     <Container>
       <Form>
+        <Row>
+          <h1 className='title'>Form com bootstrap</h1>
+          <Col className='col-12 col-lg-4 col-md-6'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Digite seu Email</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -16,30 +20,61 @@ function App() {
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
-      
+        </Col>
+        <Col className='col-12 col-lg-4 col-md-6'>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
+         </Col>
+        
+       
+        </Row>
+        <Row>
+             <Col className='col-12 col-lg-4 col-md-6'>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
+          <Button variant="primary" type="submit">Submit</Button>
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        
+        </Col>
+        </Row>
       </Form>
-
-
-
-
-
-
-
     </Container>
   )
 }
 
 export default App
+
+
+// <Form>
+//         <Form.Group className="mb-3" controlId="formBasicEmail">
+//           <Form.Label>Digite seu Email</Form.Label>
+//           <Form.Control type="email" placeholder="Enter email" />
+//           <Form.Text className="text-muted">
+//             We'll never share your email with anyone else.
+//           </Form.Text>
+//         </Form.Group>
+      
+//         <Form.Group className="mb-3" controlId="formBasicPassword">
+//           <Form.Label>Password</Form.Label>
+//           <Form.Control type="password" placeholder="Password" />
+//         </Form.Group>
+//         <Form.Group className="mb-3" controlId="formBasicCheckbox">
+//           <Form.Check type="checkbox" label="Check me out" />
+//         </Form.Group>
+//         <Button variant="primary" type="submit">
+//           Submit
+//         </Button>
+//       </Form>
+
+
+
+
+
+
+
+
+
 
 
 
